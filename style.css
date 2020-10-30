@@ -1,0 +1,384 @@
+a,
+button,
+input,
+textarea:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+  box-shadow: none;
+  border: 0;
+}
+
+body {
+  color: #000;
+  overflow-x: hidden;
+  font-family: font-family: 'Nunito', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 10px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.navbar__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navbar__menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar__menu ul li {
+  margin-right: 35px;
+}
+
+.navbar__menu ul li a {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar__menu ul li a:hover {
+  border-bottom: 3px solid #E10000;
+}
+
+h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 96px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 170px;
+  margin-bottom: 75px;
+}
+
+.slider__item p {
+  font-family: Nunito;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  color: #394265;
+  padding-bottom: 75px;
+}
+
+.slider__border {
+  width: 269px;
+  height: 35px;
+  left: 376px;
+  top: 616px;
+  margin-bottom: 260px;
+  background: #E10000;
+  left: 25.7%;
+}
+
+.filter__one {
+  position: relative;
+  background: url(img/bg1.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.filter__two {
+  position: relative;
+  background: url(img/bg2.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.filter__three {
+  position: relative;
+  background: url(img/bg3.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Стрелка */
+.slick-arrow {
+  border: 0;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  border: 0;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  border: 0;
+}
+
+/* Точки */
+.slick-dots {
+  border: 0;
+  padding: 0;
+}
+
+.slick-dots li {
+
+  border: 0;
+}
+
+.slick-dots button {
+  border: 0;
+}
+
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.1;
+}
+
+/* Конкретный слайдер */
+.slider {
+  position: relative;
+  padding: 0px 0px;
+}
+
+/* стрелки */
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../img/sl-arrow_l.svg) 0 0/100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url(../img/sl-arrow_r.svg) 0 0/100% no-repeat;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+  margin-top: 30px;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #DADADA;
+  border-radius: 50%;
+  outline: none;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: #E10000;
+}
+
+footer {
+  background: #303030;
+  padding: 30px 0;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text p {
+  font-family: Nunito;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer__text ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer__text ul li {
+  margin-right: 30px;
+}
+
+.footer ul li:last-child {
+  margin-right: 0px;
+}
+
+.footer__text ul li a {
+  text-decoration: none;
+  font-family: Nunito;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer__text ul li a:hover {
+  border-bottom: 3px solid #E10000;
+}
+.services > h1:nth-child(1) {
+  margin-top: 0px;
+  }
+.services__container {
+  background: url(img/srvices.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.services__text {
+  width: 1100px;
+  font-family: Nunito;
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: #394265;
+  line-height: 22px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.services__wrap {
+  padding-bottom: 380px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__container {
+  background: url(img/contact.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.contacts__geo {
+  margin-bottom: 80px;
+  margin-top: 100px;
+  display: flex;
+}
+
+.contacts__geo ul {
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.contacts__geo ul li {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__geo ul li h4 {
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contacts__geo ul li img {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.contacts__geo ul li p {
+  font-family: Nunito;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.contacts__map {
+  margin-bottom: 200px;
+}
+
+.contacts form h2 {
+  font-family: Playfair Display SC;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+}
+
+.contacts form {
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 450px;
+  padding: 60px 0 90px 0;
+  margin-top: 130px;
+  text-align: center;
+}
+
+.contacts form input {
+  background: #3E4047;
+  font-weight: normal;
+  font-size: 1.2rem;
+  padding: 25px;
+  width: 250px;
+  color: #DADADA;
+  margin-bottom: 30px;
+}
+
+.contacts form button {
+  padding: 25px;
+  width: 300px;
+  background: #E10000;
+  color: #fff;
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.border__services {
+  margin-bottom: 0;
+  margin-top: 50px;
+}
