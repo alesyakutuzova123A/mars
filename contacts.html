@@ -86,8 +86,22 @@
                                 Online application</h2>
                             <input placeholder="your name" required type="text">
                             <input placeholder="your email" required type="text">
-                            <button>Send</button>
+                            <button class="popup-open">Send</button>
+                            <div class="popup-fade">
 
+                                <div class="popup">
+                            
+                                    <a class="popup-close" href="#">Close</a>
+                            <h4>Thanks!</h4>
+                                    <p>
+Your application has been sent!
+                                    </p>
+                            <h5>
+                                We will contact you as soon as possible
+                            </h5>
+                                </div>		
+                            
+                            </div>
                         </form>
                     </div>
 
@@ -115,7 +129,59 @@
         </div>
 
     </footer>
+    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
 
+    <script>
+    
+    $(document).ready(function($) {
+    
+        $('.popup-open').click(function() {
+    
+            $('.popup-fade').fadeIn();
+    
+            return false;
+    
+        });	
+    
+        
+    
+        $('.popup-close').click(function() {
+    
+            $(this).parents('.popup-fade').fadeOut();
+    
+            return false;
+    
+        });		
+    
+     
+    
+        $(document).keydown(function(e) {
+    
+            if (e.keyCode === 27) {
+    
+                e.stopPropagation();
+    
+                $('.popup-fade').fadeOut();
+    
+            }
+    
+        });
+    
+        
+    
+        $('.popup-fade').click(function(e) {
+    
+            if ($(e.target).closest('.popup').length == 0) {
+    
+                $(this).fadeOut();					
+    
+            }
+    
+        });
+    
+    });
+    
+    </script>
 </body>
 
 </html>
