@@ -1,4 +1,5 @@
-a,
+
+  a,
 button,
 input,
 textarea:active,
@@ -16,6 +17,9 @@ body {
   font-family: font-family: 'Nunito', sans-serif;
   font-family: 'Playfair Display', serif;
   font-size: 10px;
+  padding: 0;
+  margin: 0 auto;
+  
 }
 
 .container {
@@ -379,7 +383,10 @@ footer {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
+.contacts__geo > ul:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  }
 .border__services {
   margin-bottom: 0;
   margin-top: 50px;
@@ -558,7 +565,7 @@ font-size: 1rem;
 
 @media screen and (min-width:480px) and (max-width: 767px) {
   .container {
-    width: 100%;
+    width: 95%;
   }
 
   body.lock {
@@ -568,7 +575,9 @@ font-size: 1rem;
   .navbar {
     height: 30px;
   }
-
+  .contacts__geo > ul:nth-child(2) {
+    padding: 0;
+    }
   .header_burger {
     display: block;
     position: absolute;
@@ -757,7 +766,7 @@ font-size: 1rem;
 
 @media screen and (max-width: 479px) {
   .container {
-    width: 96%;
+    width: 95%;
   }
 
   body.lock {
@@ -982,4 +991,10 @@ font-size: 1rem;
         left: 68%;
         
       }
+      .contacts__geo > ul:nth-child(2) {
+        padding: 0px;
+        }
+        .contacts__geo > ul:nth-child(2) > li:nth-child(1) > h4:nth-child(1) {
+          margin-top: 0px;
+          }
 }

@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARS-ANT</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="services.html">
-    <link rel="stylesheet" href="contacts.html">
-    <link rel="stylesheet" href="script.js">
+    <script src="script.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
@@ -91,6 +89,14 @@
         </div>
 
     </footer>
+    <script>
+        $(document).ready(function () {
+            $('.header_burger').click(function (event) {
+                $('.header_burger, .navbar__menu').toggleClass('active');
+                $('body').toggleClass('lock');
+            });
+        });
+    </script> 
 </body>
 
 </html>
